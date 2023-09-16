@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="assets/js/script.js">
+        windows.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if (document.querySelector(".menu nav ul").style.display == "flex"){
+                    document.querySelector(".menu nav ul").style.display = "none";
+                } else {
+                    document.querySelector(".menu nav ul").style.display = "flex"
+                }
+            });
+        };
+    </script>
+
 </head>
 
 <body>
@@ -17,6 +30,11 @@
             </div>
             <div class="menu">
                 <nav>
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
                     <ul>
                         <li><a href="">HOME</a></li>
                         <li><a href="">HOME</a></li>
@@ -177,6 +195,63 @@
             </aside>
         </div>
     </section>
+
+    <footer>
+        <div class="container flexColumn">
+            <div class="footer_menu">
+                <div class="fm_1">
+                    ...
+                </div>
+                <div class="fm_2">
+                    ...
+                </div>
+                <div class="fm_3">
+                    ...
+                </div>
+            </div>
+
+            <div class="footer_area">
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Medicenter</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Medicenter</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Latest Tweets</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_copy">
+                Copright - Todos os Direitos Reservados
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
